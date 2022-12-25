@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "323896969287",
+    "firebase_url": "https://tulan-cosmetics-4e56c.firebaseio.com",
+    "project_id": "tulan-cosmetics-4e56c",
+    "storage_bucket": "tulan-cosmetics-4e56c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323896969287:android:c23120ce0bb22886",
+        "android_client_info": {
+          "package_name": "com.example.batyaa.tulan_cosmetics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323896969287-he8h76imi05jsm9oijda7ecmco8gda9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKJsr52l5fqKVj48wp0Zgb6LKb-Wfnrzg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323896969287:android:369c746557723823",
+        "android_client_info": {
+          "package_name": "com.example.batyaa.tulancosmetics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323896969287-he8h76imi05jsm9oijda7ecmco8gda9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKJsr52l5fqKVj48wp0Zgb6LKb-Wfnrzg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

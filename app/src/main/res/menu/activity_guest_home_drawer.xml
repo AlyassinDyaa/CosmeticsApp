@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/aboutUsGuest"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/nav_productCategory_guest"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="Perfumes" />
+
+        <item
+            android:id="@+id/nav_items_tulanCatgeory_guest"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title=" Tulan Products" />
+
+
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/request"
+                android:icon="@drawable/ic_message_black_24dp"
+                android:title="Request" />
+           <item
+                android:id="@+id/feedback"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/leave"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Leave"
+                />
+        </menu>
+    </item>
+
+
+
+</menu>

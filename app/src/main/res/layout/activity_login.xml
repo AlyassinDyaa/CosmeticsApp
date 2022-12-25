@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/white">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleLogoImageView"
+        android:layout_width="129dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/black_boarder"
+        android:src="@drawable/tlogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273" />
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="264dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="272dp"
+        android:background="@drawable/login_style"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:ems="10"
+        android:fontFamily="@font/eagle_lake"
+        android:hint="   Enter Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="3dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="261dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/login_style"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:fontFamily="@font/eagle_lake"
+        android:hint="  Enter Password"
+        android:inputType="textPassword"
+        android:paddingLeft="3dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginEmail"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <TextView
+        android:fontFamily="@font/sumana"
+        android:id="@+id/guestntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="MoveToQuestHome"
+        android:text="Continue as Guest"
+        android:textAllCaps="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="140dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/login_btn"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="LOGIN"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginPassword"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+        app:layout_constraintTop_toTopOf="@+id/loginBtn" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

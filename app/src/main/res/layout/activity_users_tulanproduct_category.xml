@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".Admin.CatgeoryActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+
+            <ProgressBar
+                android:id="@+id/myDataLoaderProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:paddingTop="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIEW TULAN CATEGORIES"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:id="@+id/title"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/sumana"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="452dp"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/admin_add_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_home"
+        app:menu="@menu/activity_guest_home_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

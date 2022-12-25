@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.batyaa.tulan_cosmetics">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".saplshScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Users.guestAboutUsActivity" />
+        <activity android:name=".Admin.DetailActivity" />
+        <activity
+            android:name=".FIREBASE_CATEGORY.ItemsActivity"
+            android:parentActivityName=".FIREBASE_CATEGORY.ItemsActivity" />
+        <activity android:name=".FIREBASE_CATEGORY.adminAddActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".FIREBASE_CATEGORY.guestListActivity" />
+        <activity android:name=".Users.guestFeedbackActivity" />
+        <activity android:name=".Users.guestDetailActivity" />
+        <activity android:name=".FIREBASE_CATEGORY.adminTulanAddActivity" />
+        <activity android:name=".FIREBASE_CATEGORY.tulanItemsActivity" />
+        <activity android:name=".FIREBASE_CATEGORY.guestTulanListActivity" />
+        <activity android:name=".FIREBASE_CATEGORY.adminAddAboutUS" />
+        <activity android:name=".Admin.CatgeoryActivity" />
+        <activity android:name=".FIREBASE_CATEGORY.categoryDetailRecyclerActvity" />
+        <activity android:name=".category.male.maleListActivity" />
+        <activity android:name=".category.male.adminAddMaleActivity" />
+        <activity android:name=".category.female.femaleListActivity" />
+        <activity android:name=".category.female.adminAddFemaleActivity" />
+        <activity android:name=".category.Offers.offersListActivity" />
+        <activity android:name=".category.Offers.adminAddOffersList" />
+        <activity android:name=".category.TulanFemale.adminTULANaddFemaleActivity" />
+        <activity android:name=".category.TulanMale.adminTULANaddMaleActivity" />
+        <activity android:name=".category.TulanOffers.adminTULANaddOffersActivity" />
+        <activity android:name=".category.TulanOffers.tulanOffersListActivity" />
+        <activity android:name=".category.TulanMale.tulanMaleListActivity" />
+        <activity android:name=".category.TulanFemale.tulanFemaleListActivity" />
+        <activity android:name=".Admin.tulanCategories" />
+        <activity android:name=".Users.category.usersProductCategory" />
+        <activity android:name=".Users.category.usersTULANproductCategory" />
+        <activity android:name=".Users.category.tulanOffers.usersTulanOffersLISTActivity" />
+        <activity android:name=".Users.category.tulanFemale.usersTulanFemaleLISTActivity" />
+        <activity android:name=".Users.category.tulanMale.usersTulanMaleLISTActivity" />
+        <activity android:name=".Users.category.female.usersFemaleActivity" />
+        <activity android:name=".Users.category.male.userMaleActivity" />
+        <activity android:name=".Users.category.offers.userOfferActivity" />
+        <activity android:name=".LoginActivity" />
+    </application>
+
+</manifest>

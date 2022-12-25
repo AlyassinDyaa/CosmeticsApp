@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.DetailActivity"
+    tools:showIn="@layout/activity_guest_detail"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:paddingTop="70dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:paddingTop="10dp"
+                android:id="@+id/DetailImageView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:padding="5dp"
+                android:src="@drawable/load"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop" />
+
+
+
+            <TextView
+                android:layout_below="@id/DetailImageView"
+                android:id="@+id/nameDetailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="5dp"
+                android:maxLines="1"
+                android:textStyle="bold|italic"
+                android:fontFamily="@font/eagle_lake"
+                android:textColor="@color/colorAccent"
+                android:text="Brand Name" />
+
+            <TextView
+                android:id="@+id/categoryTextViewDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/nameTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="19dp"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_below="@id/nameDetailTextView"
+                android:fontFamily="@font/eagle_lake"/>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/priceConstLay"
+                android:layout_below="@id/nameDetailTextView">
+                <TextView
+                    android:id="@+id/currencyTypeDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toEndOf="@+id/priceRTextView"
+                    android:layout_toRightOf="@+id/priceRTextView"
+                    android:fontFamily="@font/eagle_lake"
+                    android:paddingTop="9dp"
+                    android:paddingBottom="5dp"
+                    android:text="JOD"
+                    android:paddingLeft="60dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <TextView
+                    android:id="@+id/priceRTextViewDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="12dp"
+                    android:fontFamily="@font/eagle_lake"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="5dp"
+                    android:text="Price"
+                    android:textSize="18dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black"
+                    android:textStyle="italic|bold"
+                    tools:layout_editor_absoluteY="0dp" />
+            </android.support.constraint.ConstraintLayout>
+
+
+            <TextView
+                android:layout_below="@id/priceConstLay"
+                android:id="@+id/sizeDetailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                android:textSize="18dp"
+                android:paddingLeft="16dp"
+                android:fontFamily="@font/eagle_lake"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:paddingTop="9dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/ml"
+                android:layout_below="@id/priceConstLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mL"
+                android:fontFamily="@font/eagle_lake"
+                android:textColor="@color/black"
+                android:paddingLeft="65dp" />
+
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dec"
+                android:text="Description: "
+                android:layout_below="@id/ml"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/sumana"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/descriptionDetailTextViewDetails"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/dec"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-2dp"
+                android:fontFamily="@font/eagle_lake"
+                android:minLines="2"
+                android:padding="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"
+                android:text="Description"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+
+
+            <TextView
+                android:layout_below="@id/DetailImageView"
+                android:layout_margin="6dp"
+                android:id="@+id/stockTextDetailview"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:fontFamily="@font/eagle_lake"
+                android:text="Stock"
+                android:paddingTop="2dp"
+                android:paddingLeft="320dp"
+                android:textSize="18dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintEnd_toEndOf="@id/InStock"
+                app:layout_constraintEnd_toStartOf="@id/InStock"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_below="@id/DetailImageView"
+                android:paddingTop="12dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/InStock"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="-2dp"
+                android:fontFamily="@font/eagle_lake"
+                android:text="In Stock: "
+                android:paddingLeft="250dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorAccent"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textUsreInput"
+                android:alpha="0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LLButton"
+                android:layout_below="@id/descriptionDetailTextViewDetails"
+                android:gravity="center">
+                    <Button
+                        android:background="@drawable/login_btn"
+                        android:textStyle="bold"
+                        android:textColor="@color/whitt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ORDER"
+                        android:id="@+id/requestP"
+                        />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fiveSpace"
+                android:layout_below="@id/LLButton"
+                android:padding="1dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/guest_detail_app_bat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_home"
+        app:menu="@menu/activity_guest_home_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

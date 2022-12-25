@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".Users.guestAboutUsActivity">
+
+
+
+
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/whitt">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:paddingTop="12dp"
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="42dp"
+                android:background="@color/indiaRed" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logo"
+                android:layout_width="115dp"
+                android:layout_height="117dp"
+                android:layout_below="@id/Title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:paddingTop="31dp"
+                android:src="@drawable/tlogo" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/eagle_lake"
+                android:paddingTop="12dp"
+                android:paddingBottom="10dp"
+                android:text="@string/title"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="italic|bold" />
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_below="@id/title"
+    android:id="@+id/pack"
+    android:paddingBottom="15dp"
+    android:background="@color/whitt"
+    android:paddingTop="10dp"
+    android:layout_height="140dp">
+
+    <ImageView
+        android:id="@+id/rose1"
+        android:layout_width="159dp"
+        android:layout_height="141dp"
+        android:layout_alignStart="@+id/logo"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingTop="9dp"
+        android:src="@drawable/a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/rose1"
+        android:layout_width="135dp"
+        android:layout_height="141dp"
+        android:layout_alignStart="@+id/logo"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingTop="9dp"
+        android:src="@drawable/r"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <ImageView
+        android:id="@+id/rose1"
+        android:layout_width="141dp"
+        android:layout_height="140dp"
+        android:layout_alignStart="@+id/logo"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingTop="9dp"
+        android:src="@drawable/e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+</android.support.constraint.ConstraintLayout>
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pack"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-26dp"
+                android:fontFamily="@font/eagle_lake"
+                android:paddingTop="40dp"
+                android:text="About Us"
+                android:paddingLeft="11dp"
+                android:textColor="@color/indiaRed"
+                android:id="@+id/aboutUsTitle"
+                android:textSize="20dp"
+                android:textStyle="italic|bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="To me, it is very important to have perfume in which it is hard to recognize a particular flower or scent. That gives a touch of mystery.”
+Choosing your perfect perfume is no easy task, don't think it is, and with all the amazing fragrances on the market, it sure is a tough decision to make! When it comes to looking at buying the perfect fragrance, there a few things to know and take into consideration, besides your preference of scent.
+And here comes our role in Tulan We not only categorize our products or our events but provide you with ideas that specialize in the personality that suits you.
+We also give you any information about the products that help you choose the best for you.
+Trust us coz we know you we know the best for you."
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:padding="10dp"
+                android:fontFamily="@font/berkshire_swash"
+                android:id="@+id/aboutUsEnglish"
+                android:layout_below="@id/aboutUsTitle"/>
+
+            <TextView
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="بالنسبة لي ، من المهم جدآ الحصول على العطور التي يصعب فيها التعرف على زهرة أو رائحة معينة. فهذا يعطي لمسة من الغموض.
+إن إختيار العطر المثالي ليس بالمهمة السهلة، لا أعتقد أنه ومع كل العطور المدهشة في السوق سيكون من السهل الأختيار. فمن المؤكد أنه قرار صعب! عندما يتعلق الأمر بالبحث عن شراء العطر المثالي، هناك بعض الأشياء التي يجب معرفتها وأخذها بعين الاعتبار ، إلى جانب تفضيلاتك للرائحة.
+وهنا يأتي دورنا في تولان نحن لا نقوم فقط بتصنيف منتجاتنا أو هدايانا للمناسبات بل نزودك بالأفكار التي تختص شخصيتك والتي تتناسب معك.
+نقدم لك أيضًا العديد من المعلومات حول المنتجات التي تساعدك على اختيار الأفضل لك.
+ثق بنا لأننا نعرفك سنعرف الأنسب لك."
+                android:paddingTop="15dp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:padding="15dp"
+                android:id="@+id/aboutUsArabic"
+                android:layout_below="@id/aboutUsEnglish" />
+
+        <TextView
+            android:paddingLeft="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Follow Us Here:"
+            android:id="@+id/followUsTitle"
+            android:layout_below="@id/aboutUsArabic"
+            android:padding="10dp"
+            android:textColor="@color/indiaRed"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:textAlignment="textStart"
+            android:paddingBottom="6dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:id="@+id/zeroSpace"
+                android:layout_below="@id/followUsTitle" />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/zeroSpace"
+    android:id="@+id/rlSocial"
+    android:paddingLeft="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TULAN"
+        android:onClick="moveToFacebook"
+        android:textColor="@color/black"
+        android:id="@+id/tulanFacebookLink"
+        android:paddingLeft="50dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/face"
+                android:padding="10dp"
+                android:paddingBottom="25dp"
+                android:paddingTop="30dp"
+                android:paddingLeft="25dp"
+                android:id="@+id/faceLogo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/oneSpace"
+        android:layout_below="@id/faceLogo" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tulan_cosmetics"
+                android:id="@+id/tulanInstagramLink"
+                android:paddingLeft="50dp"
+                android:layout_below="@id/oneSpace"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/inst"
+                android:layout_below="@id/oneSpace"
+                android:padding="10dp"
+                android:paddingTop="30dp"
+                android:paddingLeft="25dp"
+                android:id="@+id/instaLogo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/twoSpace"
+        android:layout_below="@id/instaLogo" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ranxoxo8"
+                android:id="@+id/tulanSnapChatLink"
+                android:paddingLeft="50dp"
+                android:layout_below="@id/twoSpace"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/snap"
+                android:layout_below="@id/twoSpace"
+                android:padding="10dp"
+                android:paddingTop="30dp"
+                android:paddingLeft="25dp"
+                android:id="@+id/snapLogo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:id="@+id/threeSpace"
+        android:layout_below="@id/snapLogo" />
+
+
+    <Button
+        android:textAlignment="center"
+        android:onClick="makeCall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/threeSpace"
+        android:text="Call Me"
+        android:paddingTop="1dp"
+        android:textColor="@color/whitt"
+        android:fontFamily="@font/almendra_sc"
+        android:id="@+id/callUsButton"
+        android:background="@drawable/login_btn"/>
+</RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
+
+
+  <include
+            android:id="@+id/tab"
+            layout="@layout/guest_aboutus_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_home"
+            app:menu="@menu/activity_guest_home_drawer" />
+</android.support.v4.widget.DrawerLayout>
